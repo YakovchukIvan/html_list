@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        li {
+    font-size: 18px;
+}
+
+ul>li>ul::after {
+    content: '';
+    height: 20px;
+    display: block;
+}
+
+a:hover, ul>li>ul>li>ul>li:hover {
+    background-color: #f3acac;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+li {
+    color: black;
+    padding: 3px;
+}
+
+ul li:first-child, ul li:first-child a{
+    color: rgb(62, 178,95);
+}
+
+.class12+.class5>a {
+    color: blue;
+}
+
+[title] {
+    color: blueviolet;
+    font-weight: 600;
+}
+
+ul>li>ul>li:nth-child(odd) a{
+    background-color: rgb(255, 242,204)
+}
+
+.lorem4 {
+    text-decoration: underline;
+}
+
+ul>li>ul>li>ul li:last-child {
+    font-style: italic;
+}
+
+ul>li>ul>li>ul li:first-letter {
+    color:red;
+    text-transform: uppercase;
+}
+
+.ul li:nth-child(3n) span{
+    font-weight: 600;
+}
+    </style>
+<body>
+
+    <ul class="ul">
+        <li><a href ="#">Class 1</a></li>
+        <li><a id="class2" href="#"><span>Class 2</span></a>
+            <ul>
+                <li><a href="#class2">Lorem ipsum dolor sit amet.</a></li>
+                <li><a href="#class2" title="Eum inventore odio ex delectus?">Eum inventore odio ex delectus?(має "title")</a></li>
+                <li><a href="#class2">Ullam asperiores corrupti ad blanditiis!</a></li>
+            </ul>
+        </li>
+        <li><a href ="#"><span>Class 16</span></a></li>
+        <li class="class12"><a href ="#">Class 12</a></li>
+        <li class="class5"><a id ="class5" href="#">Class 5</a>
+            <ul>
+                <li><a href="#class5">Lorem ipsum dolor sit amet.</a></li>
+                <li><a href="#class5">Quidem, atque. Commodi, temporibus suscipit.</a></li>
+                <li><a href="#class5" title="Leatae quasi esse labore amet.">Leatae quasi esse labore amet.(має "title")</a>
+                    <ul>
+                        <li>class mini-lorem 1</li>
+                        <li>class mini-lorem 2</li>
+                        <li>class mini-lorem 3</li>
+                        <li class="lorem4">class mini-lorem 4</li>
+                    </ul>
+                </li>
+                <li><a href="#class5">Eum inventore odio ex delectus?</a></li>
+                <li><a href="#class5">Ullam asperiores corrupti ad blanditiis!</a></li>
+            </ul>
+        </li>
+        <li><a href ="#"><span>Class 4</span></a></li>
+        <li><a href ="#">Class 5</a></li>
+        <li><a href ="#">Class 8</a></li>
+        <li><a id="class16" href="#"><span>Class 16</span></a>
+            <ul>
+                <li><a href="#class16">Lorem ipsum dolor sit amet.</a></li>
+                <li><a href="#class16">Labore obcaecati illum recusandae minima.</a></li>
+            </ul>
+        </li>
+        <li><a href ="#">Class 10</a></li>
+        <li class="class12"><a href ="#">Class 12</a></li>
+        <li class="class5"><a href ="#"><span>Class 5</span></a></li>
+        <li><a href ="#">Class 14</a></li>
+        <li><a id="class7" href="#">Class 7</a>
+            <ul>
+                <li><a href="#class7">Lorem ipsum dolor sit amet.</a>
+                    <ul>
+                        <li class="lorem4">class mini-lorem 4</li>
+                        <li>class mini-lorem 3</li>
+                        <li>class mini-lorem 2</li>
+                    </ul>
+                </li>
+                <li><a href="#class7" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet(має "title")</a>
+                    <ul>
+                        <li><a href="#">class mini-lorem 1</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href ="#"><span>Class 5</span></a></li>
+        <li><a id="class4" href="#">Class 4</a>
+            <ul>
+                <li><a href="#class4">Lorem ipsum dolor sit amet.</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
